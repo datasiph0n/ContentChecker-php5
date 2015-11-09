@@ -24,8 +24,18 @@ if(isset($_POST['parse'])){
 /* Move down content because we have a fixed navbar that is 50px tall */
 
 body {
+  background-image: url("http://siph0n.in/index_files/dot.gif");
 	padding-top: 50px;
 	padding-bottom: 20px;
+}
+#scanresults {
+  color: #fff;
+}
+#jumbo {
+  background-color: transparent;
+}
+#credits {
+  color: #fff;
 }
 
 </style>
@@ -36,12 +46,9 @@ body {
     <![endif]-->
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header"> <a class="navbar-brand" href="../">Content Checker</a> </div>
-  </div>
-</div>
-<div class="jumbotron">
+<center>
+<img src="http://forum.siph0n.in/images/cleandark/logo.png"/>
+<div id="jumbo" class="jumbotron" style="width:50%;">
 <div class="container">
 <div class="inner_body text-center">
   <form class="form" method="post" name="checker" role="form">
@@ -77,10 +84,9 @@ body {
 <div class="inner_body text-center">
   <div id="scanresults">- Results will display here -</div>
   <hr>
-  <footer>
-    <p>&copy; <a href="http://ctrlbox.com" target="_blank">Ctrlbox.com</a> 2014</p>
-  </footer>
 </div>
+<footer id="credits">
+  Credits: <a href="https://github.com/83leej/ContentChecker-php5">https://github.com/83leej/ContentChecker-php5</a>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
